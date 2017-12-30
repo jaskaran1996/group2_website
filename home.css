@@ -23,3 +23,57 @@ body{background-color:#F8EEE7}
 .w3-hover-border-theme:hover {border-color:#000000 !important}
 
 .w3-button:hover{color:#F4DECB!important;background-color:#ccc!important}
+
+h1{
+    text-align: center;
+     font-family: 
+    'Trocchi', serif; font-size: 45px;
+    font-weight: normal; line-height: 48px; margin: 0; 
+    
+}
+.cardbackround{
+
+    color:#fff!important;
+    background-color:#94618e !important
+}
+
+.card {
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-bottom: 25px;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-hot {
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 450px;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 1%;
+    
+}
+
+.card-hot h4 {
+    font-size: 10px;
+}
+
+
+.card-hot:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+

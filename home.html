@@ -1,121 +1,211 @@
-<!DOCTYPE html>
-<html>
-<title>techypedia.com</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-<body>
+    <!DOCTYPE html>
+    <html>
+    <title>techypedia.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
-    <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Social</a>
-    <a href="technews.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tech News</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    
-    
-  </div>
-</div>
- 
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Portals</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Networking</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Game development</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Computer science</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Web security </a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Welcome Technophiles!</h1>
-      <p>  Write here</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p> Write here</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p> Write here</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  
-  
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
+    <style>
+    html,body,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
     }
-}
+    </style>
+    <body>
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="home.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
+        <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Social</a>
+        <a href="technews.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tech News</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
 
-</body>
-</html>
+
+      </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Portals</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Networking</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Game development</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Computer science</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Web security </a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+      <div class="w3-row w3-padding-64">
+        
+          <div class=" w3-container">
+          <h1 class="w3-text-teal" style="margin-top:15px;margin-bottom: 50px;">Welcome Technophiles!</h1>
+          <div class="" style="width: 55%; display: inline-block;" >
+
+         <!-- Cards links for Blogs-->
+
+              <div class="card">
+  <img src="https://media.wired.com/photos/593294d426780e6c04d2cd0f/4:3/w_383,c_limit/ff_kimdotcom4_f.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Inside The Mind And Mansion Of The Net's Most Wanted Man</b></h4> 
+    <p>CHARLES GRAEBER</p> 
+  </div>
+</div>
+     <!-- Cards2-->
+            <div class="card">
+  <img src="https://media.wired.com/photos/5a3b0b687ddf3c6b8cc416bb/master/w_582,c_limit/xbox-TA.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>5 Things You Didn't Know Your Xbox One Could Do</b></h4> 
+    <p>JEFRERY VAN CAMP</p> 
+  </div>
+</div>
+     <!-- Cards3-->
+
+            <div class="card " style="width:175px;">
+  <img src="https://media.wired.com/photos/5a3ae224ec4a443e2268b9d4/master/w_582,c_limit/Cryptojacking.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Cryptojacking Has Gotten Out Of Control</b></h4> 
+    <p>LILY HAY NEWMAN</p> 
+  </div>
+</div>
+                 <!-- Cards4-->
+
+            <div class="card " style=" ">
+  <img src="https://media.wired.com/photos/5a38476315e73c599bf954cb/master/w_582,c_limit/iStock-628232910.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>How The Blockchain Is Redefinding Trust</b></h4> 
+    <p>RACHEL BOTSMAN</p> 
+  </div>
+</div>
+            
+   <!-- Cards5-->
+
+            <div class="card " style="">
+  <img src="https://media.wired.com/photos/5a3c5363ba20820595a08f2a/master/w_582,c_limit/iphonehb-TA.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>The Year The Home Button Died</b></h4> 
+    <p>DAVID PIERCE</p> 
+  </div>
+</div>
+   
+       <!-- Cards6-->
+
+            <div class="card " style="width:175px;">
+  <img src="https://media.wired.com/photos/593888c1d80dd005b42b6443/master/w_1132,c_limit/Winters_Wired_Aerial_6526.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>What Wrong With Apple's New Campus</b></h4> 
+    <p>Adam ROGERS</p> 
+  </div>
+</div>          
+    <!-- END MAIN -->
+    </div>
+              
+    <!-- Most Popular/Hot -->
+              
+    <div style="width: 39%; display: inline-block; float: right">
+        
+        <h4> What's hot</h4>
+        
+        <div class="card-hot">
+            <img src="https://www.wired.com/wp-content/uploads/2017/08/anxiety_intro.jpg" alt="Avatar" style="width: 30%; height:100%; display:inline-block; float: left;">
+            <div class="container" style="display:inline-block; float: left;">
+                <h4><b>How To Survie The Great Tech Panic of 2017</b></h4> 
+                <p>WIRED STAFF</p> 
+            </div>
+        </div>
+        
+                <div class="card-hot">
+            <img src="https://assets.wired.com/photos/w_860/wp-content/uploads/2017/10/iStock-533047590.jpg" alt="Avatar" style="width: 30%; height:100%; display:inline-block; float: left;">
+            <div class="container" style="display:inline-block; float: left;">
+                <h4><b>A Phone To Separate Work and Play</b></h4> 
+                <p>SAMSUNG KNOX</p> 
+            </div>
+        </div>
+        
+                <div class="card-hot">
+            <img src="https://media.wired.com/photos/5a3d845797e37855242d855a/master/w_582,c_limit/trump-internet-freedom-877989820.jpg" alt="Avatar" style="width: 30%; height:100%; display:inline-block; float: left;">
+            <div class="container" style="display:inline-block; float: left;">
+                <h4><b>2017 Was A Terrible Year For Internet Freedom</b></h4> 
+                <p>ISSIE LAPOWSKY</p> 
+            </div>
+        </div>
+        
+        
+                <div class="card-hot">
+            <img src="https://media.wired.com/photos/5a3d5b83eb4788232f9423c8/master/w_582,c_limit/SonosOne-TopArt.jpg" alt="Avatar" style="width: 30%; height:100%; display:inline-block; float: left;">
+            <div class="container" style="display:inline-block; float: left;">
+                <h4><b>Hackers Can Rickroll Sonos & Bose Speakers Over The Internet</b></h4> 
+                <p>ANDY GREENBERG</p> 
+            </div>
+        </div>
+        
+        
+                <div class="card-hot">
+            <img src="https://media.wired.com/photos/5a3d8ddfdab97f2b797c4745/16:9/w_374,c_limit/secruityroundup-FA.jpg" alt="Avatar" style="width: 30%; height:100%; display:inline-block; float: left;">
+            <div class="container" style="display:inline-block; float: left;">
+                <h4><b>France Gose After WhatsApp For Sharing Data With Facebook</b></h4> 
+                <p>BRIAN BARRETT</p> 
+            </div>
+        </div>
+        
+    </div>  
+              
+              
+              
+    <!-- END Most Popular -->
+      </div>
+    </div>
+</div>
+
+    <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+
+    </script>
+    <!-- Footer -->
+
+    <footer>
+      <p>Posted by: Group two</p>
+      <p>Contact information: <a href="mailto:someone@example.com">
+      someone@example.com</a>.</p>
+    </footer>
+
+    </body>
+    </html>
