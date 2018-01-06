@@ -1,127 +1,184 @@
 <!DOCTYPE html>
 <html>
-<title>techypedia.com</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="about.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Social</a>
-    <a href="technews.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tech News</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    
-    
-  </div>
-</div>
- 
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Portals</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Networking</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Game development</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Computer science</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Web security</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  
-  
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
-<!-- Footer -->
-
-<footer>
-  <p>Posted by: Group Two</p>
-  <p>Contact information: <a href="Techypedia@gmail.com">
-   Techypedia@gmail.com</a>.</p>
-</footer>
-</body>
+   <title>techypedia.com</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      html,body,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+      .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+      }
+   </style>
+   <body>
+      <!-- Navbar -->
+      <div class="w3-top">
+         <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="home.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Social</a>
+            <a href="technews.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tech News</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+         </div>
+      </div>
+      <!-- Sidebar -->
+      <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+         <i class="fa fa-remove"></i>
+         </a>
+         <h4 class="w3-bar-item"><b>Portals</b></h4>
+         <a class="w3-bar-item w3-button w3-hover-black" href="#">Networking</a>
+         <a class="w3-bar-item w3-button w3-hover-black" href="#">Game development</a>
+         <a class="w3-bar-item w3-button w3-hover-black" href="#">Computer science</a>
+         <a class="w3-bar-item w3-button w3-hover-black" href="#">Web security </a>
+      </nav>
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+      <div class="w3-main" style="margin-left:250px">
+         <div class="w3-row w3-padding-64">
+            <div class=" w3-container">
+               <h1 class="" style="margin-top:15px;margin-bottom: 50px;">▌│█║▌║▌║ TECH NEWS/ ENTERTAINMENT║▌║▌║█│▌</h1>
+               <div class="" style="width: 90%; display: inline-block;" >
+                  <div class="card-news-top">
+                     <div class="container" style="display:inline-block;">
+                        <h6><b>Latest Articles</b></h6>
+                     </div>
+                  </div>
+                  <!-- Articles Start -->
+                  <div class="card-news">
+                     <a href="https://www.wired.com/story/hackers-can-rickroll-sonos-bose-speakers-over-internet/">
+                        <img src="https://media.wired.com/photos/5a3d5b83eb4788232f9423c8/master/w_582,c_limit/SonosOne-TopArt.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>Hackers Can Rickroll Sonos & Bose Speakers Over The Internet</b></h4>
+                           <p>ANDY GREENBERG</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/gaming/2018/01/is-gaming-addiction-a-disorder-or-a-junk-diagnosis/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2018/01/GettyImages-521815209-800x533.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>Is Gaming Addiction a "disorder" Or A "Junk Diagnosis?</b></h4>
+                           <p>KYLE ORLAND</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/gadgets/2018/01/beats-co-founder-jimmy-iovine-is-leaving-apple-reports-say/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2015/06/IMG_4396-640x426.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>Beats Co-Finder Jimmy Iovine Is Leaving Apple</b></h4>
+                           <p>SAMUEL AXON</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://www.wired.com/2017/08/tech-panic/">
+                        <img src="https://www.wired.com/wp-content/uploads/2017/08/anxiety_intro.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>How To Survie The Great Tech Panic of 2017</b></h4>
+                           <p>WIRED STAFF</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/gadgets/2018/01/it-takes-17-hours-for-an-image-to-burn-in-on-the-iphone-x-test-shows/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2017/11/iPhone-X-table-front-1-800x533.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>iT Takes 17 Hours For An Image To Burn In On The Iphone X, Test Shows</b></h4>
+                           <p>SAMUEL AXON</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://www.wired.com/brandlab/2017/10/phone-separate-work-play/">
+                        <img src="https://assets.wired.com/photos/w_860/wp-content/uploads/2017/10/iStock-533047590.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>A Phone To Separate Work and Play</b></h4>
+                           <p>SAMSUNG KNOX</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://www.wired.com/story/internet-freedom-2017/">
+                        <img src="https://media.wired.com/photos/5a3d845797e37855242d855a/master/w_582,c_limit/trump-internet-freedom-877989820.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>2017 Was A Terrible Year For Internet Freedom</b></h4>
+                           <p>ISSIE LAPOWSKY</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/features/2018/01/a-practical-guide-to-microchip-implants/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2017/12/Tom-with-xNT-and-injection-syringe-800x450.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>A Practical Guide To Microchip Implants</b></h4>
+                           <p>YAEL GRAUER</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/gaming/2017/12/big-titles-must-wait-as-nintendo-pushes-back-64gb-switch-game-card-rollout/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2017/12/Switch6-800x534-800x534.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>Big Titles Must Wait As Nintendo Pushes Back 64GB Switch Game Card Rollout</h4>
+                           <p>VALENTINA PALLADINO</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card-news">
+                     <a href="https://arstechnica.com/gadgets/2017/12/source-code-for-apples-historic-lisa-os-to-be-made-available-in-2018/">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2013/01/lisa2.jpg" alt="Avatar" style="width: 16%; height:100%; display:inline-block; float: left;">
+                        <div class="container" style="display:inline-block; float: left;">
+                           <h4><b>Source Code For Apple's Historic Lisa OS To Be Made Available  2018</b></h4>
+                           <p>ANDY GREENBERG</p>
+                        </div>
+                     </a>
+                  </div>
+                  <!-- Articles End -->
+               </div>
+            </div>
+            <footer>
+               <p>Posted by: Group two</p>
+               <p>Contact information: <a href="mailto:someone@example.com">
+                  Techypedia@gmail.com</a>.
+               </p>
+            </footer>
+         </div>
+         <!-- END Most Recent -->
+      </div>
+      </div>
+      </div>
+      <script>
+         // Get the Sidebar
+         var mySidebar = document.getElementById("mySidebar");
+         // Get the DIV with overlay effect
+         var overlayBg = document.getElementById("myOverlay");
+         // Toggle between showing and hiding the sidebar, and add overlay effect
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+                 overlayBg.style.display = "none";
+             } else {
+                 mySidebar.style.display = 'block';
+                 overlayBg.style.display = "block";
+             }
+         }
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+             overlayBg.style.display = "none";
+         }
+      </script>
+      <!-- Footer -->
+   </body>
 </html>

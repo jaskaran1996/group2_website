@@ -96,6 +96,45 @@ h1{
     
 }
 
+.card-news {
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 1%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.card-news-top {
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 1%;
+    text-align: center;
+}
+.card-news-top h6 {
+    font-size: 40px;
+    
+    
+}
+
+
+.card-news h4 {
+    font-size: 22px;
+}
+
+
+.card-news:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 .line-separator {
     
 height:1px;
@@ -103,13 +142,5 @@ width: 1350px;
 background:#717171;
 
 border-bottom:2px solid #313030;
-    
-}
-
-{
-    
-    
-    
-    
     
 }
